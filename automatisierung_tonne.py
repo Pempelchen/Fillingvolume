@@ -7,7 +7,6 @@ def get_barcode():
     return barcode
 
 def save_project(barcode, path_projekt): 
-    #path= path_projekt
     fileName = get_date() + '_' + datetime.datetime.now().strftime("%f") + '_' + barcode
     file = path_projekt + fileName
     if file[-4:].lower() != ".psx":
